@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { SiteLogo } from "@/components/site-logo";
 import { wa } from "@/lib/whatsapp";
 
 const links = [
@@ -17,18 +18,7 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link
-          href="#"
-          className="group flex items-center gap-2 font-semibold tracking-tight text-slate-900"
-        >
-          <span
-            className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-sm font-bold text-white shadow-sm"
-            aria-hidden
-          >
-            R
-          </span>
-          <span className="text-lg">Redobrai</span>
-        </Link>
+        <SiteLogo className="min-w-0 shrink" />
 
         <nav
           className="hidden items-center justify-center gap-0.5 md:flex"

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa6";
 import { SiGithub, SiX } from "react-icons/si";
+import { SiteLogo } from "@/components/site-logo";
 import { wa } from "@/lib/whatsapp";
 import { Reveal } from "./reveal";
 
@@ -51,12 +52,7 @@ export function SiteFooter() {
         <Reveal>
           <div className="flex flex-col justify-between gap-8 border-b border-slate-200/90 pb-10 md:flex-row md:items-center">
             <div>
-              <div className="flex items-center gap-2">
-                <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-900 text-sm font-bold text-white">
-                  R
-                </span>
-                <span className="text-lg font-semibold">Redobrai</span>
-              </div>
+              <SiteLogo size="sm" className="max-w-[200px]" />
               <p className="mt-3 max-w-sm text-sm text-slate-600">
                 Motores de IA de domínio: imobiliário, RH e visão para controlo
                 de qualidade industrial.
